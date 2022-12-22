@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <!-- Custom link -->
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css')}}">
+
+     <!-- Link Swiper's CSS -->
+     <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+     <!-- CSS only -->
+<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> -->
+
+
+
+
+
+
+</head>
+<body>
+
+    <!-- header section start -->
+
+    <header style="padding: 25px;">
+        <a href="#" class="logo"><img src="../static/images/logo.jpeg" height="70px" width="100px"></a>
+
+        <nav class="navbar">
+            <a href="#home" class="active">home</a>
+            <a href="#about">about</a>
+            <a href="#menu">menu</a>
+            <a href="#team">team</a>
+            <a href="#reservation">reservation</a>
+            <a href="#blog">blog</a>
+
+        </nav>
+        <div class="icons">
+           <i class="fas fa-bars"style="font-size: 30px;" id="menu"></i>
+            <i class="fas fa-search" style="font-size: 30px;"></i>
+            <i class="fas fa-heart" style="font-size: 30px;"></i>
+            <i class="fas fa-shopping-cart" style="font-size: 30px;"></i>
+
+        </div>
+    </header>
+
+    <!-- slider section starts -->
+
+    <div class="home" id="home">
+        <div class="swiper home-slider">
+            <div class="swiper-wrapper wrapper">
+                <div class="swiper-slide slide slide1">
+                    <div class="content">
+                        <img src="images/crown-symbol.jpeg" alt="">
+
+                        <h3>delicious royate</h3>
+                        <h1>gift voucher</h1>
+
+                        <p>
+                            give away your beloved customers
+                        </p>
+
+                        <a href="#" class="btn" style="background-color: burlywood; padding: 10px;">Welcome</a>
+
+                    </div>
+
+                </div>
+
+                <div class="swiper-slide slide slide2">
+                    <div class="content">
+                        <img src="../static/images/crown-symbol.jpeg" alt="">
+
+                        <h3>sale of 10% this dish</h3>
+                        <h1>the fresh</h1>
+
+                        <p>
+                            food Restaurant
+                        </p>
+
+                        <a href="#" class="btn" style="background-color: burlywood; padding: 10px;">Welcome</a>
+
+                    </div>
+
+                </div>
+
+                <div class="swiper-slide slide slide3">
+                    <div class="content">
+                        <img src="i../static/mages/crown-symbol.jpeg" alt="">
+
+                        <h3>we are open</h3>
+                        <h1>fresh fruits</h1>
+
+                        <p>
+                            you will love it
+                        </p>
+
+                        <a href="#" class="btn" style="background-color: burlywood; padding: 10px;">welcome</a>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </div>
+
+    <!-- slider section ends -->
+
+    <section class="welcome" id="about">
+        <h1 class="heading">WELCOME TO ROYATE</h1>
+        <center><h3 class="sub-heading"> ~ Luxury ~ & ~ Quality ~ </h3></center>
+
+        <div class="box-container">
+            <div class="box">
+                <div class="images">
+                    <img src="../static/images/post-thumbjpeg" alt="">
+                </div>
+
+                <div class="content">
+                    <h3>PROFESSIONAL LEVEL</h3>
+                    <p>If you are a chef, no matter how good a chef you are,
+                        it's not good cooking for yourself; the joy is in cooking for others
+                        - it's the same with music. ... </p>
+
+
+                        <button style="padding: 10px;background-color: burlywood; border-radius: 5px;"><a href="#">Read more</a></button>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="images">
+                    <img src="../static/images/post-thumb1.jpg" height="" width="" alt="">
+                </div>
+
+                <div class="content">
+                    <h3>FRESH FOOD GUARANTEED</h3>
+                    <p>If you are a chef, no matter how good a chef you are,
+                        it's not good cooking for yourself; the joy is in cooking for others
+                        - it's the same with music. ... </p>
+
+                        <button style="padding: 10px;background-color: burlywood; border-radius: 5px;"><a href="#">Read more</a></button>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="images">
+                    <img src="../static/images/post-thumb-2.jpg" height="" width="" alt="">
+                </div>
+
+                <div class="content">
+                    <h3>THE MENU IS PLENTIFUL</h3>
+                    <p>If you are a chef, no matter how good a chef you are,
+                        it's not good cooking for yourself; the joy is in cooking for others
+                        - it's the same with music. ... </p>
+
+                        <button style="padding: 10px;background-color: burlywood; border-radius: 5px;"><a href="#">Read more</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- header section end -->
+
+
+    <!-- welcome section start -->
+
+    <!-- our menu section start -->
+    <section class="our-menu" id="menu">
+        <h1 class="heading" >Our food menu</h1>
+        <center><h3 class="sub-heading"> ~ see what we offer ~ </h3></center>
+
+        <div class="menu-container">
+            <div class="item">
+                <div class="item-name">
+                    <h2>Main Course</h2>
+                    <img src="../static/images/drinklogo.jpg" height="50px;" width="50px;" alt="" >
+                </div>
+
+                <div class="item-body">
+                    <div class="item-menu">
+                        <h3>Super Delicious Zuppa Toscana</h3>
+                        <span class="dots"></span>
+                        <h3>$40</h3>
+
+                        <ul>
+                            <li><a href="#">Chicken</a></li>
+                            <li><a href="#">Italian</a></li>
+                            <li><a href="#">Sausage</a></li>
+                            <li><a href="#">Spinach</a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="item-menu">
+                        <h3>Super Delicious Zuppa Toscana</h3>
+                        <span class="dots"></span>
+                        <h3>$26</h3>
+
+                        <ul>
+                            li><a href="#">Mashroom</a></li>
+                            <li><a href="#">Italian</a></li>
+                            <li><a href="#">Sausage</a></li>
+                            <li><a href="#">Spinach</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-name">
+                    <h2>Soups & Salads</h2>
+                    <img src="../static/images/drinklogo.jpg" height="50px;" width="50px;" alt="" >
+                </div>
+
+                <div class="item-body">
+                    <div class="item-menu">
+                        <h3>Super Delicious Zuppa Toscana</h3>
+                        <span class="dots"></span>
+                        <h3>$40</h3>
+
+                        <ul>
+                            <li><a href="#">Chicken</a></li>
+                            <li><a href="#">Italian</a></li>
+                            <li><a href="#">Sausage</a></li>
+                            <li><a href="#">Spinach</a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="item-menu">
+                        <h3>Super Delicious Zuppa Toscana</h3>
+                        <span class="dots"></span>
+                        <h3>$26</h3>
+
+                        <ul>
+                            li><a href="#">Mashroom</a></li>
+                            <li><a href="#">Italian</a></li>
+                            <li><a href="#">Sausage</a></li>
+                            <li><a href="#">Spinach</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-name">
+                    <h2>Drinks</h2>
+                    <img src="../static/images/drinklogo.jpg" height="50px;" width="50px;" alt="" >
+                </div>
+
+                <div class="item-body">
+                    <div class="item-menu">
+                        <h3>Super Delicious Zuppa Toscana</h3>
+                        <span class="dots"></span>
+                        <h3>$40</h3>
+
+                        <ul>
+                            <li><a href="#">Chicken</a></li>
+                            <li><a href="#">Italian</a></li>
+                            <li><a href="#">Sausage</a></li>
+                            <li><a href="#">Spinach</a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="item-menu">
+                        <h3>Super Delicious Zuppa Toscana</h3>
+                        <span class="dots"></span>
+                        <h3>$26</h3>
+
+                        <ul> li><a href="#">Mashroom</a></li>
+                            <li><a href="#">Italian</a></li>
+                            <li><a href="#">Sausage</a></li>
+                            <li><a href="#">Spinach</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-name">
+                    <h2>Desserts</h2>
+                    <img src="../static/images/drinklogo.jpg" height="50px;" width="50px;" alt="" >
+                </div>
+
+                <div class="item-body">
+                    <div class="item-menu">
+                        <h3>Super Delicious Zuppa Toscana</h3>
+                        <span class="dots"></span>
+                        <h3>$40</h3>
+
+                        <ul>
+                            <li><a href="#">Chicken</a></li>
+                            <li><a href="#">Italian</a></li>
+                            <li><a href="#">Sausage</a></li>
+                            <li><a href="#">Spinach</a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="item-menu">
+                        <h3>Super Delicious Zuppa Toscana</h3>
+                        <span class="dots"></span>
+                        <h3>$26</h3>
+
+                        <ul>
+                            li><a href="#">Mashroom</a></li>
+                            <li><a href="#">Italian</a></li>
+                            <li><a href="#">Sausage</a></li>
+                            <li><a href="#">Spinach</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- our team section starts-->
+    <section class="our-team" id="team">
+        <h1 class="heading">our talented chef</h1>
+        <center>
+            <h3 class="sub-heading"> ~ Experience & Enthusiasm ~ </h3>
+        </center>
+
+        <div class="our-chef">
+            <div class="item">
+                <div class="image ">
+                    <img src="../static/images/darkchefjpg" height="600px" width="200px" alt="">
+                </div>
+
+                <div class="chef-info">
+                    <h3>Jerry Mkin</h3>
+                    <span>Master chef</span>
+                    <ul>
+                        <li><a href="http://www.instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="http://www.twitter.com"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="https://ke.linkedin.com"><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="http://www.facebook.com"><i class="fa-brands fa-facebook"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="image ">
+                    <img src="../static/images/cheflady.png"  height="600px" width="200px" alt="">
+                </div>
+
+                <div class="chef-info">
+                    <h3>Felisha Makenzie</h3>
+                    <span>Master chef</span>
+                    <ul>
+                       <li><a href="http://www.instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="http://www.twitter.com"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="https://ke.linkedin.com"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="http://www.facebook.com"><i class="fa-brands fa-facebook"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="image ">
+                    <img src="../static/images/darkchef03jpg" height="600px" width="200px" alt="">
+                </div>
+
+                <div class="chef-info">
+                    <h3>Jason Momoa</h3>
+                    <span>Master chef</span>
+                    <ul>
+                            <li><a href="http://www.instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="http://www.twitter.com"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="https://ke.linkedin.com"><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="http://www.facebook.com"><i class="fa-brands fa-facebook"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <!-- our team section ends -->
+
+    <!-- our reservation start -->
+    <div class="reservation" id="reservation">
+        <div class="image">
+
+        </div>
+        <div class="form">
+            <h1 class="heading">book a table</h1>
+            <center><h3 class="sub-heading"> ~ check out our place ~ </h3>
+            </center>
+
+            <form action="/reservation" method="post">
+                <div class="form-holder">
+                    <div>
+                        <select name="people">
+                            <option>1 people</option>
+                            <option>2 people</option>
+                            <option>3 people</option>
+                            <option>4 people</option>
+                        </select>
+
+                        <input type="time" name="time" placeholder="Time">
+                        <input type="tel" name="phone" placeholder="Phone">
+                    </div>
+
+                    <div>
+                        <input type="date" name="date" placeholder="Date">
+                        <input type="text" name="name" placeholder="Name">
+                        <input type="email" name="email" placeholder="email">
+
+                    </div>
+
+                </div>
+
+                <!-- <center><a href="#" class="btn" style="background-color: burlywood; padding: 10px; border-radius: 5px;">Book now</a></center> -->
+
+                <input type="submit" value="Book now" style="background-color: burlywood; padding: 10px;border-radius: 8px; color: black;">
+
+                <h3 style="text-align:center; background-color:burlywood; color:white; padding:10px; border-radius:8px;">{{message}}</h3>
+            </form>
+
+        </div>
+
+    </div>
+
+    <!-- our reservation end -->
+
+
+    <!-- new sectin start -->
+
+    <section class="blog welcome" id="blog">
+        <h1 class="heading">latest news</h1>
+        <center><h3 class="sub-heading"> ~ Greate articles ~ </h3></center>
+
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <img src="../static/images/wine.jpg" height="700px" width="600px" alt="">
+                </div>
+
+                <div class="content">
+                    <h3>PROFESSIONAL LEVEL</h3>
+                    <p>
+                        If you are a chef, no matter how good a chef you are,
+                        it's not good cooking for yourself; the joy is in cooking for others
+                        - it's the same with music. ...
+                    </p>
+                    <a href="#">READ MORE</a>
+                    <img src="../static/images/blog2.jpg" height="250px" width="500px" alt="">
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="../static/images/table1.jpeg" height="700px" width="600px" alt="">
+                </div>
+
+                <div class="content">
+                    <h3>FRESH FOOD GUARANTEED</h3>
+                    <p>
+                        If you are a chef, no matter how good a chef you are,
+                        it's not good cooking for yourself; the joy is in cooking for others
+                        - it's the same with music. ...
+                    </p>
+                    <a href="#">READ MORE</a>
+                    <img src="../static/images/table2.jpeg" height="250px" width="500px" alt="">
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="../static/images/chefplen.jpg" height="700px" width="600px" alt="">
+                </div>
+
+                <div class="content">
+                    <h3>MENU IS PLENTIFUL</h3>
+                    <p>
+                        If you are a chef, no matter how good a chef you are,
+                        it's not good cooking for yourself; the joy is in cooking for others
+                        - it's the same with music. ...
+                    </p>
+                    <a href="#">READ MORE</a>
+                    <img src="../static/images/table3.jpg"  height="250px" width="500px"alt="">
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- new section end -->
+
+
+    <!-- footer section start -->
+
+    <section class="footer">
+        <img src="../static/images/logo.jpeg" class="logo">
+        <div class="container">
+            <div>
+                <h3>ABOUT US</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Reprehenderit dicta incidunt excepturi aperiam nihil dignissimos tempora velit quam?
+                    Dolores eveniet dolorem sequi atque maxime,
+                    temporibus architecto. Culpa, deleniti excepturi! Quibusdam?
+                </p>
+            </div>
+
+            <div>
+                <h3>GET NEWS & OFFERS</h3>
+                <input type="email" name="" placeholder="enter your email">
+                <ul style="font-size:25px ; color: bisque; " >
+                    <li><a href="http://www.instagram.com"><i class="fa-brands fa-instagram" style="color: burlywood;"></i></a></li>
+                    <li><a href="http://www.twitter.com"><i class="fa-brands fa-twitter" style="color: burlywood;"></i></a></li>
+                    <li><a href="https://ke.linkedin.com"><i class="fa-brands fa-linkedin" style="color: burlywood;"></i></a></li>
+                    <li><a href="http://www.facebook.com"><i class="fa-brands fa-facebook" style="color: burlywood;"></i></a></li>
+                </ul>
+
+            </div>
+
+            <div>
+                <h3>CONTACT US</h3>
+                <span>Creative Networks Tohana</span>
+                <span> + (254) 714564211</span>
+                <span>Creativenetworks@gmail.com</span>
+                <span>www.creativenetworks.in</span>
+            </div>
+
+        </div>
+
+        <p>&copy;2022 Reserved by Walkinknight</p>
+    </section>
+    <!-- footer section end -->
+
+
+    <!-- jump to top -->
+
+    <a href="#"><button class="topbtn"><i class="fa-solid"></i></button></a>
+
+
+
+
+
+
+
+
+     <!-- Swiper JS -->
+     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+     <!-- Initialize Swiper -->
+     <script>
+       var swiper = new Swiper(".home-slider", {
+         spaceBetween: 30,
+         centeredSlides: true,
+         autoplay: {
+           delay: 7500,
+           disableOnInteraction: false,
+         },
+         pagination: {
+           el: ".swiper-pagination",
+           clickable: true,
+         },
+         loop:true,
+
+       });
+     </script>
+
+    <script type="text/javascript">
+        let menu = document.querySelector('#menu');
+        let navbar = document.querySelector('.navbar');
+
+        menu.onclick = () =>{
+            menu.classList.toggle('fa-times');
+            navbar.classList.toggle('active');
+        }
+    </script>
+
+</body>
+</html>
